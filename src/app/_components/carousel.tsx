@@ -1,5 +1,8 @@
+"use client"
 import * as React from "react";
 
+import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay"
 import {
   Carousel,
   CarouselContent,
@@ -7,12 +10,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 
 export function HomeCarousel() {
   return (
     <div className="w-full">
-      <Carousel className="w-full" opts={{ loop: true }}>
+      <Carousel
+        className="w-full"
+        opts={{ loop: true }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]} >
         <CarouselContent className="aspect-16/9 sm:aspect-32/9 xl:aspect-32/12 2xl:aspect-64/12">
           <CarouselItem className="flex relative justify-center items-center">
             <Image
