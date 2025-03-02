@@ -3,7 +3,6 @@ import { LanguageSelector } from "./header-language-selector";
 import { Navigation } from "./header-navigation";
 import { AccountSettings } from "./header-account";
 
-
 export function Header() {
   return (
     <nav className="flex px-4 py-2 w-full top-0 left-0 right-0 z-50 shadow">

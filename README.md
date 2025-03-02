@@ -16,3 +16,4 @@ module.exports = {
   ]
 }
 ```
+- Manejar error cuando se pierde conexión con Odoo.
