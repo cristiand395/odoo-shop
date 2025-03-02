@@ -6,8 +6,8 @@ import { AccountSettings } from "./header-account";
 
 export function Header() {
   return (
-    <nav className="flex px-4 py-2 w-100vw fixed top-0 left-0 right-0 z-50 shadow">
-      <div className="w-screen max-w-screen-xl mx-auto flex justify-between items-center">
+    <nav className="flex px-4 py-2 w-full top-0 left-0 right-0 z-50 shadow">
+      <div className="md:min-w-6xl mx-auto flex justify-between items-center">
         <div>Icono</div>
         <div>
           <Navigation />
